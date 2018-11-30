@@ -1,0 +1,32 @@
+<!doctype html>
+
+
+<html>
+  <head>
+    <title>Profiles</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  </head>
+
+  <body>
+
+    <div ng-app="profileApp" ng-controller="profileCtrl">
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                    <th>Name</th>
+                        <th>Company</th>
+            </tr>
+ 
+            <tr ng-repeat="profiles in list">
+                <td>{{profiles._id}}</td>
+                    <td>{{profiles.name.first + ' ' + profiles.name.last}}</td>
+                        <td>{{profiles.company}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="profileController.js"></script>
+
+  </body>
+</html>
