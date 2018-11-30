@@ -1,0 +1,254 @@
+[
+  {
+    "_id": "5bdcbbbf3eff1212bfaefde6",
+    "index": 0,
+    "registration_date": "Wed Nov 28 1990 20:33:13 GMT+0000 (UTC)",
+    "balance": "3383.46",
+    "age": 20,
+    "eyeColor": "blue",
+    "name": {
+      "first": "William",
+      "last": "Hinton"
+    },
+    "company": "KOFFEE",
+    "email": "william.hinton@koffee.org",
+    "phone": "+1 (996) 442-2231",
+    "address": "324 Aviation Road, Websterville, Arizona, 1522",
+    "about": "Et id non quis culpa in enim commodo ea consectetur amet pariatur in ipsum. Incididunt laboris in qui est in nisi laborum dolore. Magna veniam incididunt deserunt quis voluptate in mollit officia velit cillum laboris ex nostrud.",
+    "latitude": "40.733325",
+    "longitude": "174.561122",
+    "tags": [
+      "cillum",
+      "aliqua",
+      "deserunt",
+      "occaecat",
+      "adipisicing"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Kerr Adams"
+      },
+      {
+        "id": 1,
+        "name": "Hayes Kinney"
+      },
+      {
+        "id": 2,
+        "name": "Bird Marsh"
+      }
+    ],
+    "greeting": "Hello, William! You have 9 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5bdcbbbfebf4b7f4f3f1b0f6",
+    "index": 1,
+    "registration_date": "Wed Mar 01 1978 08:27:27 GMT+0000 (UTC)",
+    "balance": "3973.84",
+    "age": 40,
+    "eyeColor": "green",
+    "name": {
+      "first": "Gillespie",
+      "last": "Robinson"
+    },
+    "company": "FIREWAX",
+    "email": "gillespie.robinson@firewax.ca",
+    "phone": "+1 (887) 583-2030",
+    "address": "273 Freeman Street, Elizaville, Wisconsin, 830",
+    "about": "Mollit excepteur quis mollit cillum et ad pariatur proident excepteur fugiat. Ullamco labore ea incididunt laboris exercitation mollit deserunt. Non ut exercitation sint ea velit fugiat commodo ullamco adipisicing aliquip reprehenderit. Deserunt elit aliqua elit et deserunt.",
+    "latitude": "-18.051355",
+    "longitude": "176.01701",
+    "tags": [
+      "tempor",
+      "veniam",
+      "laboris",
+      "qui",
+      "laborum"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Shawn Hale"
+      },
+      {
+        "id": 1,
+        "name": "Trevino Watson"
+      },
+      {
+        "id": 2,
+        "name": "Myrtle Herring"
+      }
+    ],
+    "greeting": "Hello, Gillespie! You have 5 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5bdcbbbf7df1c3e9a0f21ab6",
+    "index": 2,
+    "registration_date": "Sun Mar 22 1987 08:45:10 GMT+0000 (UTC)",
+    "balance": "3041.51",
+    "age": 20,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Moody",
+      "last": "Castillo"
+    },
+    "company": "ENERSOL",
+    "email": "moody.castillo@enersol.io",
+    "phone": "+1 (879) 478-3701",
+    "address": "391 Horace Court, Comptche, Michigan, 3074",
+    "about": "Reprehenderit mollit ad aute labore magna nisi eiusmod magna proident laborum ipsum do elit non. Duis enim cupidatat cillum exercitation officia. Commodo officia voluptate qui laborum elit irure exercitation eiusmod consectetur amet tempor non. Tempor est quis aute culpa quis nulla do sit. Non qui cupidatat incididunt officia.",
+    "latitude": "4.294501",
+    "longitude": "-155.882959",
+    "tags": [
+      "Lorem",
+      "eu",
+      "veniam",
+      "dolore",
+      "ipsum"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Amber Maldonado"
+      },
+      {
+        "id": 1,
+        "name": "Luna Swanson"
+      },
+      {
+        "id": 2,
+        "name": "Gould Martin"
+      }
+    ],
+    "greeting": "Hello, Moody! You have 6 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5bdcbbbf0e9d87048e3016c5",
+    "index": 3,
+    "registration_date": "Sun Feb 12 1989 01:25:28 GMT+0000 (UTC)",
+    "balance": "2727.51",
+    "age": 26,
+    "eyeColor": "green",
+    "name": {
+      "first": "Manuela",
+      "last": "Dickson"
+    },
+    "company": "ELEMANTRA",
+    "email": "manuela.dickson@elemantra.me",
+    "phone": "+1 (800) 431-2512",
+    "address": "490 Sandford Street, Bethany, Nevada, 4706",
+    "about": "Id dolore labore dolore officia nisi. Laborum do deserunt eiusmod irure pariatur pariatur. Enim duis velit in commodo. Veniam magna anim ullamco amet veniam anim veniam ea ea consequat excepteur.",
+    "latitude": "-7.142601",
+    "longitude": "-38.422682",
+    "tags": [
+      "ut",
+      "id",
+      "esse",
+      "et",
+      "non"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Pacheco Barron"
+      },
+      {
+        "id": 1,
+        "name": "Mccarthy Mooney"
+      },
+      {
+        "id": 2,
+        "name": "Vaughn Gill"
+      }
+    ],
+    "greeting": "Hello, Manuela! You have 5 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5bdcbbbf277fbc1b65458507",
+    "index": 4,
+    "registration_date": "Thu Aug 08 1991 21:03:44 GMT+0000 (UTC)",
+    "balance": "3593.83",
+    "age": 33,
+    "eyeColor": "green",
+    "name": {
+      "first": "Jerri",
+      "last": "Levine"
+    },
+    "company": "AFFLUEX",
+    "email": "jerri.levine@affluex.biz",
+    "phone": "+1 (900) 590-3508",
+    "address": "623 Herkimer Court, Dragoon, Hawaii, 7103",
+    "about": "Laboris laboris irure sit mollit et. Consequat ipsum tempor minim excepteur ipsum aliqua culpa consequat. Irure amet ad Lorem consectetur nostrud est eu magna pariatur sit dolor. Elit magna cillum laboris magna nisi mollit incididunt id. Est do non culpa enim dolore velit.",
+    "latitude": "-81.108834",
+    "longitude": "51.926602",
+    "tags": [
+      "minim",
+      "anim",
+      "in",
+      "magna",
+      "officia"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Lorena Riggs"
+      },
+      {
+        "id": 1,
+        "name": "Bertie Randall"
+      },
+      {
+        "id": 2,
+        "name": "Ester Gay"
+      }
+    ],
+    "greeting": "Hello, Jerri! You have 9 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5bdcbbbf0db5d964b15edb63",
+    "index": 5,
+    "registration_date": "Sun May 19 2013 08:48:42 GMT+0000 (UTC)",
+    "balance": "3043.78",
+    "age": 29,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Monique",
+      "last": "Morrow"
+    },
+    "company": "GLUKGLUK",
+    "email": "monique.morrow@glukgluk.com",
+    "phone": "+1 (871) 433-2427",
+    "address": "255 Arkansas Drive, Frank, New Jersey, 346",
+    "about": "Et ut deserunt tempor deserunt aliqua anim mollit aliquip. Aute Lorem ad ex ex. Irure anim in amet elit qui. Labore nisi nisi officia magna id. Deserunt duis aute duis occaecat quis eu dolor deserunt. Veniam proident officia ad proident cupidatat eu non aliqua.",
+    "latitude": "-65.142355",
+    "longitude": "91.390613",
+    "tags": [
+      "magna",
+      "eiusmod",
+      "in",
+      "do",
+      "dolor"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Keller Delacruz"
+      },
+      {
+        "id": 1,
+        "name": "Neva Mclaughlin"
+      },
+      {
+        "id": 2,
+        "name": "Latoya Diaz"
+      }
+    ],
+    "greeting": "Hello, Monique! You have 5 unread messages.",
+    "favoriteFruit": "strawberry"
+  }
+]
