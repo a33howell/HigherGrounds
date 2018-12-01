@@ -12,80 +12,117 @@
 
     <div id="tableWrapper" ng-app="profileApp" ng-controller="profileCtrl">
         <table>
+            <!-- Title -->
             <tr>
                 <th>PROFILES</th>
                 <th></th>
             </tr>
  
+            <!-- Loop through every profile and create a new row in the table for each -->
             <tr ng-repeat="profile in profiles">
                 <td class="thinColumn">
+
+                    <!-- Avatar picture and profile name -->
                     <div id="element">
                         <img src="avatar.png" alt="Avatar">
                         <h1>{{profile.name.first + ' ' + profile.name.last}}</h1>
                     </div>
+
+                    <!-- greeting -->
                     <div id="element">
                         <p>{{profile.greeting}}</p>
                     </div>
+
+                    <!-- about -->
                     <div id="element">
                         <h2>ABOUT</h2>
                         <p2>{{profile.about}}</p2>
                     </div>
+
+                    <!-- ID -->
                     <div id="element">
                         <p2>{{'ID - ' + profile._id}}</p2>
                     </div>
                 </td>
 
                 <td class="thickColumn">
+
+                    <!-- Create new sub-table in the middle containing other personal info -->
                     <table class="subTable">
+
+                        <!-- age -->
                         <tr class="subRow">
                             <td class="leftColumn">AGE</td>
                             <td class="rightColumn">{{profile.age}}</td>
                         </tr>
+
+                        <!-- eye color -->
                         <tr class="subRow">
                             <td class="leftColumn">EYE COLOR</td>
                             <td class="rightColumn">{{profile.eyeColor}}</td>
                         </tr>
+
+                        <!-- favorite fruit -->
                         <tr class="subRow">
                             <td class="leftColumn">FAVORITE FRUIT</td>
                             <td class="rightColumn">{{profile.favoriteFruit}}</td>
                         </tr>
+
+                        <!-- email -->
                         <tr class="subRow">
                             <td class="leftColumn">EMAIL</td>
                             <td class="rightColumn">{{profile.email}}</td>
                         </tr>
+
+                        <!-- phone -->
                         <tr class="subRow">
                             <td class="leftColumn">PHONE</td>
                             <td class="rightColumn">{{profile.phone}}</td>
                         </tr>
+
+                        <!-- company -->
                         <tr class="subRow">
                             <td class="leftColumn">COMPANY</td>
                             <td class="rightColumn">{{profile.company}}</td>
                         </tr>
+
+                        <!-- address -->
                         <tr class="subRow">
                             <td class="leftColumn">ADDRESS</td>
                             <td class="rightColumn">{{profile.address}}</td>
                         </tr>
+
+                        <!-- latitude -->
                         <tr class="subRow">
                             <td class="leftColumn">LATITUDE</td>
                             <td class="rightColumn">{{profile.latitude}}</td>
                         </tr>
+
+                        <!-- longitude -->
                         <tr class="subRow">
                             <td class="leftColumn">LONGITUDE</td>
                             <td class="rightColumn">{{profile.longitude}}</td>
                         </tr>
                     </table>
 
+                    <!-- final block of info on the right contains lists of info and registration date -->
                     <div id="rightBlock">
+
+                        <!-- friends -->
                         <div id="element">
                             <h2>FRIENDS</h2>
                             <ul>
                                 <li ng-repeat="friend in profile.friends">{{friend.name}}</li>
                             </ul>
                         </div>
+
+                        <!-- tags -->
                         <div id="element">
                             <h2>TAGS</h2> 
                             <p2><span ng-repeat="tag in profile.tags">{{tag}}<span ng-if="!$last">, </span></span></p2>
                         </div>
+
+                        <!-- registration date -->
                         <div id="element">
                             <h2>REGISTRATION DATE</h2>
                             <p2>{{profile.registration_date}}</p2>
