@@ -14,7 +14,7 @@ app.controller('profileCtrl', function ($scope, $http) {
     $http(request)
         .success(function (jsonData) {
             $scope.arrProfiles = jsonData;
-            $scope.list = $scope.arrProfiles;
+            $scope.profiles = $scope.arrProfiles;
         })
         .error(function () {
 

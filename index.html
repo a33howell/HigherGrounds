@@ -11,64 +11,86 @@
   <body>
 
     <div id="tableWrapper" ng-app="profileApp" ng-controller="profileCtrl">
-        <table class="table table-striped">
+        <table>
             <tr>
                 <th>PROFILES</th>
                 <th></th>
             </tr>
  
-            <tr ng-repeat="profiles in list">
+            <tr ng-repeat="profile in profiles">
                 <td class="thinColumn">
-                    <h1>{{profiles.name.first + ' ' + profiles.name.last}}</h1>
-                        <p class="subText">{{'id : ' + profiles._id}}</p>
-                        <p class="subText">{{'Registered ' + profiles.registration_date}}</p>
+                    <div id="element">
+                        <img src="avatar.png" alt="Avatar">
+                        <h1>{{profile.name.first + ' ' + profile.name.last}}</h1>
+                    </div>
+                    <div id="element">
+                        <p>{{profile.greeting}}</p>
+                    </div>
+                    <div id="element">
+                        <h2>ABOUT</h2>
+                        <p2>{{profile.about}}</p2>
+                    </div>
+                    <div id="element">
+                        <p2>{{'ID - ' + profile._id}}</p2>
+                    </div>
                 </td>
 
                 <td class="thickColumn">
                     <table class="subTable">
-                        <tr>
-                            <td class="thickColumn">AGE</td>
-                            <td class="thinColumn">{{profiles.age}}</td>
+                        <tr class="subRow">
+                            <td class="leftColumn">AGE</td>
+                            <td class="rightColumn">{{profile.age}}</td>
                         </tr>
-                        <tr>
-                            <td class="thickColumn">EYE COLOR</td>
-                            <td class="thinColumn">{{profiles.eyeColor}}</td>
+                        <tr class="subRow">
+                            <td class="leftColumn">EYE COLOR</td>
+                            <td class="rightColumn">{{profile.eyeColor}}</td>
                         </tr>
-                        <tr>
-                            <td class="thickColumn">FAVORITE FRUIT</td>
-                            <td class="thinColumn">{{profiles.favoriteFruit}}</td>
+                        <tr class="subRow">
+                            <td class="leftColumn">FAVORITE FRUIT</td>
+                            <td class="rightColumn">{{profile.favoriteFruit}}</td>
+                        </tr>
+                        <tr class="subRow">
+                            <td class="leftColumn">EMAIL</td>
+                            <td class="rightColumn">{{profile.email}}</td>
+                        </tr>
+                        <tr class="subRow">
+                            <td class="leftColumn">PHONE</td>
+                            <td class="rightColumn">{{profile.phone}}</td>
+                        </tr>
+                        <tr class="subRow">
+                            <td class="leftColumn">COMPANY</td>
+                            <td class="rightColumn">{{profile.company}}</td>
+                        </tr>
+                        <tr class="subRow">
+                            <td class="leftColumn">ADDRESS</td>
+                            <td class="rightColumn">{{profile.address}}</td>
+                        </tr>
+                        <tr class="subRow">
+                            <td class="leftColumn">LATITUDE</td>
+                            <td class="rightColumn">{{profile.latitude}}</td>
+                        </tr>
+                        <tr class="subRow">
+                            <td class="leftColumn">LONGITUDE</td>
+                            <td class="rightColumn">{{profile.longitude}}</td>
                         </tr>
                     </table>
 
-                    <table class="subTable">
-                        <tr>
-                            <td class="thickColumn">COMPANY</td>
-                            <td class="thinColumn">{{profiles.company}}</td>
-                        </tr>
-                        <tr>
-                            <td class="thickColumn">EMAIL</td>
-                            <td class="thinColumn">{{profiles.email}}</td>
-                        </tr>
-                        <tr>
-                            <td class="thickColumn">PHONE</td>
-                            <td class="thinColumn">{{profiles.phone}}</td>
-                        </tr>
-                    </table>
-
-                    <table class="subTable">
-                        <tr>
-                            <td class="thickColumn">ADDRESS</td>
-                            <td class="thinColumn">{{profiles.address}}</td>
-                        </tr>
-                        <tr>
-                            <td class="thickColumn">LATITUDE</td>
-                            <td class="thinColumn">{{profiles.latitude}}</td>
-                        </tr>
-                        <tr>
-                            <td class="thickColumn">LONGITUDE</td>
-                            <td class="thinColumn">{{profiles.longitude}}</td>
-                        </tr>
-                    </table>
+                    <div id="rightBlock">
+                        <div id="element">
+                            <h2>FRIENDS</h2>
+                            <ul>
+                                <li ng-repeat="friend in profile.friends">{{friend.name}}</li>
+                            </ul>
+                        </div>
+                        <div id="element">
+                            <h2>TAGS</h2> 
+                            <p2><span ng-repeat="tag in profile.tags">{{tag}}<span ng-if="!$last">, </span></span></p2>
+                        </div>
+                        <div id="element">
+                            <h2>REGISTRATION DATE</h2>
+                            <p2>{{profile.registration_date}}</p2>
+                        </div>
+                    </div>
                 </td>
             </tr>
         </table>
