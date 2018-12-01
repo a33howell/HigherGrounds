@@ -5,22 +5,71 @@
   <head>
     <title>Profiles</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="profileStyle.css">
   </head>
 
   <body>
 
-    <div ng-app="profileApp" ng-controller="profileCtrl">
+    <div id="tableWrapper" ng-app="profileApp" ng-controller="profileCtrl">
         <table class="table table-striped">
             <tr>
-                <th>ID</th>
-                    <th>Name</th>
-                        <th>Company</th>
+                <th>PROFILES</th>
+                <th></th>
             </tr>
  
             <tr ng-repeat="profiles in list">
-                <td>{{profiles._id}}</td>
-                    <td>{{profiles.name.first + ' ' + profiles.name.last}}</td>
-                        <td>{{profiles.company}}</td>
+                <td class="thinColumn">
+                    <h1>{{profiles.name.first + ' ' + profiles.name.last}}</h1>
+                        <p class="subText">{{'id : ' + profiles._id}}</p>
+                        <p class="subText">{{'Registered ' + profiles.registration_date}}</p>
+                </td>
+
+                <td class="thickColumn">
+                    <table class="subTable">
+                        <tr>
+                            <td class="thickColumn">AGE</td>
+                            <td class="thinColumn">{{profiles.age}}</td>
+                        </tr>
+                        <tr>
+                            <td class="thickColumn">EYE COLOR</td>
+                            <td class="thinColumn">{{profiles.eyeColor}}</td>
+                        </tr>
+                        <tr>
+                            <td class="thickColumn">FAVORITE FRUIT</td>
+                            <td class="thinColumn">{{profiles.favoriteFruit}}</td>
+                        </tr>
+                    </table>
+
+                    <table class="subTable">
+                        <tr>
+                            <td class="thickColumn">COMPANY</td>
+                            <td class="thinColumn">{{profiles.company}}</td>
+                        </tr>
+                        <tr>
+                            <td class="thickColumn">EMAIL</td>
+                            <td class="thinColumn">{{profiles.email}}</td>
+                        </tr>
+                        <tr>
+                            <td class="thickColumn">PHONE</td>
+                            <td class="thinColumn">{{profiles.phone}}</td>
+                        </tr>
+                    </table>
+
+                    <table class="subTable">
+                        <tr>
+                            <td class="thickColumn">ADDRESS</td>
+                            <td class="thinColumn">{{profiles.address}}</td>
+                        </tr>
+                        <tr>
+                            <td class="thickColumn">LATITUDE</td>
+                            <td class="thinColumn">{{profiles.latitude}}</td>
+                        </tr>
+                        <tr>
+                            <td class="thickColumn">LONGITUDE</td>
+                            <td class="thinColumn">{{profiles.longitude}}</td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
         </table>
 
